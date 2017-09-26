@@ -14,4 +14,6 @@ LIB_DIR=$BUILD_DIR/libdeps
 PREFIX_DIR=$LIB_DIR/build/
 FAST_MAKE=''
 export ERIZO_HOME=$ROOT/erizo
-echo $ERIZO_HOME
+#echo $ERIZO_HOME
+cd servererizo
+make

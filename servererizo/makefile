@@ -2,7 +2,7 @@ CC=gcc
 CXX=g++
 
 #基于erizo的rtc转发服务器。
-CFLAGS = -I$(ERIZO_HOME)/src/erizo -I$(BUILD_DIR)/libdeps/build/include -I$(ERIZO_HOME)/src/third_party/webrtc/src
+CFLAGS = -I$(BUILD_DIR)/libdeps/build/include -I$(ERIZO_HOME)/src/third_party/webrtc/src -I$(ERIZO_HOME)/src/erizo 
 CPPFLAGS = -std=c++11 
 objects= RtcConmgr.o servermain.o
 	

@@ -6,7 +6,7 @@ CFLAGS = -I$(BUILD_DIR)/libdeps/build/include -I$(ERIZO_HOME)/src/third_party/we
 CPPFLAGS = -std=c++11 
 objects= RtcConmgr.o servermain.o
 	
-LDFLAGS   = -static -std=c++11 -fPIC -static-libgcc
+LDFLAGS   = -static -std=c++11 -fPIC -static-libgcc -lboost_system
 ObjTARGET = servererizo
 
 $(ObjTARGET):$(objects)

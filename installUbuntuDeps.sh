@@ -72,7 +72,7 @@ install_openssl(){
     cd $LIB_DIR
     if [ ! -f ./openssl-1.0.2j.tar.gz  ]; then
       download_openssl
-      cd openssl-1.0.2j.tar.gz
+      cd openssl-1.0.2j
       ./config --prefix=$PREFIX_DIR --openssldir=$PREFIX_DIR -fPIC
       make $FAST_MAKE -s V=0
       make install_sw

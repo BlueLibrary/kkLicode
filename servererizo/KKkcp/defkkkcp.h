@@ -1,9 +1,9 @@
 #ifndef kkkcp_h_
 #define kkkcp_h_
 #include "ikcp.h"
-#include "kkres/socket/kkAddr.h"
+#include "kkRes/socket/kkAddr.h"
 
-#include "kkres/Base/KKMutex.h"
+#include "kkRes/Base/KKMutex.h"
 #include "kkRes/Base/KKObj_Ref.h"
 //0xAF    点对点通讯控制头
 //0xAE    KCP消息头

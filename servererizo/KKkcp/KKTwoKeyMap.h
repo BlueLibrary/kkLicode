@@ -1,6 +1,6 @@
 #ifndef KKTwoKeyMap_H_
 #define KKTwoKeyMap_H_
-#include "kkres/Base/KKRWLock.h"
+#include "kkRes/Base/KKRWLock.h"
 #include <map>
 template<
 	class _Kty,

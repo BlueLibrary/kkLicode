@@ -2,9 +2,9 @@
 #include <map>
 #include <queue>
 #include <string>
-#include "kkres/socket/kksocket.h"
-#include "kkres/Base/KKMutex.h"
-#include "kkres/Base/KKRWLock.h"
+#include "kkRes/socket/kksocket.h"
+#include "kkRes/Base/KKMutex.h"
+#include "kkRes/Base/KKRWLock.h"
 
 
 #include "KKTwoKeyMap.h"

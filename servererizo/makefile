@@ -20,7 +20,7 @@ KKBase.o:  ./kkRes/Base/KKBase.h ./kkRes/Base/KKBase.cpp
 	$(CXX) -c $(CFLAGS) $(CPPFLAGS) ./kkRes/Base/KKBase.cpp
 KKMutex.o: ./kkRes/Base/KKMutex.h ./kkRes/Base/KKMutex.cpp
 	$(CXX) -c $(CFLAGS) $(CPPFLAGS) ./kkRes/Base/KKMutex.cpp
-KKCond_t.o: ./kkRes/Base/KKMutex.h ./kkRes/Base/KKCond_t.h ../kkRes/Base/KKCond_t.cpp
+KKCond_t.o: ./kkRes/Base/KKMutex.h ./kkRes/Base/KKCond_t.h ./kkRes/Base/KKCond_t.cpp
 	$(CXX) -c $(CFLAGS) $(CPPFLAGS) ./kkRes/Base/KKCond_t.cpp
 KKRWLock.o: ./kkRes/Base/KKRWLock.h ./kkRes/Base/KKRWLock.cpp
 	$(CXX) -c $(CFLAGS) $(CPPFLAGS) ./kkRes/Base/KKRWLock.cpp

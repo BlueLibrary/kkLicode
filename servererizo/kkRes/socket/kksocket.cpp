@@ -105,7 +105,7 @@ namespace kkBase
 	{
 		
 		
-		static int lx=sizeof(sockaddr_in);
+		static socklen_t lx=sizeof(sockaddr_in);
 		return	recvfrom(m_socket, buf,len,0 , (sockaddr *)&adr.address.addr4, &lx);
 		//static timeval timeout;    // 定时变量
 		//timeout.tv_sec = 0;   

@@ -6,8 +6,8 @@
 #include <map>
 #include <set>
 #include <string>
-#include "../kkRes/socket/kksocket.h"
-#include "../kkRes/Base/KKRWLock.h"
+#include "kkRes/socket/kksocket.h"
+#include "kkRes/Base/KKRWLock.h"
 
 #include "KKTwoKeyMap.h"
 typedef struct	TranInfo

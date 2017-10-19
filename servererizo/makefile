@@ -14,8 +14,8 @@ ObjTARGET = servererizo
 
 $(ObjTARGET):$(objects)
 	$(CXX) $(LDFLAGS) -o $(ObjTARGET) $(objects) \
-	$(LDFLAGS)
-	
+	$(LDFLAGS) \
+	-lpthread
 KKBase.o:  ./kkRes/Base/KKBase.h ./kkRes/Base/KKBase.cpp
 	$(CXX) -c $(CFLAGS) $(CPPFLAGS) ./kkRes/Base/KKBase.cpp
 KKMutex.o: ./kkRes/Base/KKMutex.h ./kkRes/Base/KKMutex.cpp

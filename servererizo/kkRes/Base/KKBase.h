@@ -2,9 +2,9 @@
 #define KKBase_H_
 ///一个跨平台的ku
 #ifdef _WINDOWS
-#ifndef USE_WIN_THREAD
-#define USE_WIN_THREAD
-#endif
+	#ifndef USE_WIN_THREAD
+		#define USE_WIN_THREAD
+	#endif
 #endif
       
 #ifdef USE_WIN_THREAD
@@ -19,6 +19,10 @@ typedef unsigned long                   kk_ulong;
 typedef unsigned long long              kkUInt64;
 typedef long long                       kkInt64;
 
+#ifndef _MSC_VER
+		 #define __stdcall __attribute__((__stdcall__))
+#endif
+
 #define KK_MAKELONG(low,high)           ((LONG)(((kk_ushort)(low & 0xffff)) | ((kk_ulong)((kk_ushort)((high & 0xffff))) << 16)))
 
 #define KK_LO_USHORT(l)                 ((kk_ushort)(((kk_ulong)(l)) & 0xffff))
@@ -26,10 +30,10 @@ typedef long long                       kkInt64;
 
 
 #ifndef _WINDOWS
-#include <stdlib.h>
-#include <stdio.h>
-#include <unistd.h>
-#include <pthread.h>
+		#include <stdlib.h>
+		#include <stdio.h>
+		#include <unistd.h>
+		#include <pthread.h>
 		typedef int                 BOOL;
 		typedef void *HANDLE;
 		typedef HANDLE HWND;

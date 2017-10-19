@@ -33,7 +33,7 @@ defkkkcp.o: ./KKkcp/defkkkcp.h ./KKkcp/defkkkcp.cpp
 ikcp.o: ./KKkcp/ikcp.h ./KKkcp/ikcp.c
 	$(CC) -c ./KKkcp/ikcp.c
 KKKcp.o: ./KKkcp/KKTwoKeyMap.h ./KKkcp/KKKcp.h ./KKkcp/KKKcp.cpp
-    $(CXX) -c $(CFLAGS) $(CPPFLAGS)  ./KKkcp/KKKcp.cpp
+	$(CXX) -c $(CFLAGS) $(CPPFLAGS)  ./KKkcp/KKKcp.cpp
 RtcConmgr.o:  RtcConmgr.h RtcConmgr.cpp
 	$(CXX) -c $(CFLAGS) $(CPPFLAGS)  RtcConmgr.cpp
 servermain: stdafx.h servermain.cpp

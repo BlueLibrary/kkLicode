@@ -3,8 +3,6 @@
 set -e
 
 SCRIPT=`pwd`/$0
-FILENAME=`basename $SCRIPT`
-PATHNAME=`dirname $SCRIPT`
 ROOT=$PATHNAME
 export BUILD_DIR=$ROOT/build
 CURRENT_DIR=`pwd`
@@ -17,5 +15,7 @@ export ERIZO_HOME=$ROOT/erizo
 export SERVER_HOME=$ROOT/servererizo
 echo $ERIZO_HOME
 echo $BUILD_DIR/libdeps/build/include
+./$BUILD_DIR/generateProject.sh
+./$BUILD_DIR/buildProject.sh
 cd servererizo
 make

@@ -36,7 +36,7 @@ KKKcp.o: ./KKkcp/KKTwoKeyMap.h ./KKkcp/KKKcp.h ./KKkcp/KKKcp.cpp
 	$(CXX) -c $(CFLAGS) $(CPPFLAGS)  ./KKkcp/KKKcp.cpp
 RtcConmgr.o:  RtcConmgr.h RtcConmgr.cpp
 	$(CXX) -c $(CFLAGS) $(CPPFLAGS)  RtcConmgr.cpp
-servermain: stdafx.h servermain.cpp
+servermain.o: stdafx.h servermain.cpp
 	$(CXX) -c $(CFLAGS) $(CPPFLAGS)  servermain.cpp
 install:
 	cp -f $(ObjTARGET) ./

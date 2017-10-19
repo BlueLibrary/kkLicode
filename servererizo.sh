@@ -15,7 +15,7 @@ export ERIZO_HOME=$ROOT/erizo
 export SERVER_HOME=$ROOT/servererizo
 echo $ERIZO_HOME
 echo $BUILD_DIR/libdeps/build/include
-./$BUILD_DIR/generateProject.sh
-./$BUILD_DIR/buildProject.sh
+./$ROOT/generateProject.sh
+./$ROOT/buildProject.sh
 cd servererizo
 make

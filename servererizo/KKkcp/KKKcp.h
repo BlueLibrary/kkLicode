@@ -10,7 +10,9 @@
 #include "KKTwoKeyMap.h"
 #ifndef Ckkkcp_h_
 #define Ckkkcp_h_
-
+#ifndef _MSC_VER
+		 #define __stdcall __attribute__((__stdcall__))
+#endif
 class CKKkcp
 {
 public: 

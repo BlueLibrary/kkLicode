@@ -18,4 +18,5 @@ export SERVER_HOME=$ROOT/servererizo
 echo $ERIZO_HOME
 echo $BUILD_DIR/libdeps/build/include
 cd servererizo
+make clean
 make
